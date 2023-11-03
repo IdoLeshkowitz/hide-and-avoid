@@ -8,7 +8,7 @@ function renderInstructionsPage() {
                 <section>
                     <h4>Instructions</h4>
                     <p>
-                       Each box has a value by which the number of objects in the box is multiplied (the box’ <b>multiplication rate</b>). One player (the “Hider”) chooses how to distribute the objects across the boxes before a second player (the “Opener”) chooses half of the boxes to open. Openers get the objects from the boxes they chose to open (multiplied by each box’s multiplication rate), and Hiders get the objects from each remaining box (multiplied by the box’s multiplication rate).
+                       Each box has a value by which the number of objects in the box is multiplied (the box’ <b>multiplication rate</b>). One player (the “Hider”) chooses how to distribute the objects across the boxes before a second player (the “Opener”) chooses half of the boxes to open. Openers get the objects from the boxes they avoided (i.e., did not choose to open), multiplied by each box’s multiplication rate, and Hiders get the objects from each of the opened boxes, multiplied by the box’s multiplication rate.
                     </p>
                     <p>
                         You will be assigned either the role of Hider or Opener and play the game three times with different sets of boxes.  

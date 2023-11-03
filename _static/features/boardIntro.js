@@ -9,7 +9,7 @@ function renderInstructionsPage(props) {
                         Now that you have passed the test the game proceeds as follows:
                     </p>
                     <p>
-                        If you are a Hider, you will hide objects in three sets of four boxes.<br/>
+                        If you are a <b>Hider</b>, you will hide objects in three sets of four boxes.<br/>
                         If you are an Opener, you will see the same three sets of four boxes, and in each set choose two boxes that will be opened later.
                     </p>
                     <p>
@@ -23,15 +23,14 @@ function renderInstructionsPage(props) {
                         You are a <b>Hider</b>. In each set of boxes you need to hide all of your objects. You can hide
                         anywhere between zero and all of your objects in a box. The multiplication rate of each box is
                         indicated under it, and the objects hidden there are multiplied by this rate. Objects in the
-                        boxes not chosen by your matched Opener will be yours.
+                        boxes <b>chosen</b> by your matched Opener will be yours.
                     </p>
                 }
                 { role === "seeker" &&
                     <p>
                         You are an <b>Opener</b>. In each set of boxes you need to choose two of the four boxes. The
                         multiplication rate of each box is indicated under it, and the objects hidden there are
-                        multiplied by this rate. These boxes will later be opened and the objects in them will be yours;
-                        objects in the remaining boxes will be the Hider’s.
+                        multiplied by this rate. These boxes will later be opened and the objects in them will be the hider’s; objects in the remaining, unopened boxes will be the yours.
                     </p>
                 }
             </section>,

@@ -172,7 +172,7 @@ function renderHiderBoardPage() {
                         </div>
                         <div className="board-row background-dark-grey">
                             <div className="info background-light-grey">
-                                Another player will choose 2 boxes to “steal”. They will only know the boxes’ multiplier rates.
+                                Another player will choose 2 boxes to open. They will only know the boxes’ multiplier rates.
                             </div>
                             <div className="boxes">
                                 {
@@ -359,7 +359,7 @@ function renderSeekerBoardPage() {
                             <div className="info">
                                 <p>
                                     <u>Your Task:</u><br/>
-                                    Choose 2 boxes to take.
+                                    Choose 2 boxes to open.
                                 </p>
                             </div>
                             <div className="boxes">

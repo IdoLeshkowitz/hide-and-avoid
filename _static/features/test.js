@@ -5,19 +5,19 @@ function renderTestPage() {
         }
         const steps = [
             <Question 
-                label={<span>If the Hider hides all 7 objects in box B2 and the Opener opens box B4 how much will they each get?</span>}
+                label={<span>If the Hider hides all 7 objects in box B2 and the Opener opens box B2 how much will they each get?</span>}
                 id="question_1"
                 expectedHiderAnswer="14"
                 expectedOpenerAnswer="0"
                 />,
             <Question
-                label={<span>If the Hider hides 2 objects in box B2 and 5 objects in box B4 and the Opener opens box B4 how much will they each get?</span>}
+                label={<span>If the Hider hides 2 objects in box B2 and 5 objects in box B4 and the Opener opens box B2 how much will they each get?</span>}
                 id="question_2"
                 expectedHiderAnswer="4"
                 expectedOpenerAnswer="20"
                 />,
             <Question
-                label={<span>If the Hider hides, again, 2 objects in box B2 and 5 objects in box B4 and the Opener opens box B2 how much will they each get?</span>}
+                label={<span>If the Hider hides, again, 2 objects in box B2 and 5 objects in box B4 and the Opener opens box B4 how much will they each get?</span>}
                 id="question_3"
                 expectedHiderAnswer="20"
                 expectedOpenerAnswer="4"
@@ -198,7 +198,7 @@ function renderTestPage() {
                 <>
                     <p>
                         In the test, there are two boxes: Box B2, which multiplies the objects in it by x2, and box B4, which multiplies the objects in it by x4. <br/>
-                        The Hider hides 7 objects and the Opener opens one.
+                        The Hider hides 7 objects and the Opener opens one box.
                     </p>
                     <p>
                         {props.label}<br/>
