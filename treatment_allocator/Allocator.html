@@ -1,0 +1,43 @@
+{{ block title }}
+{{ endblock }}
+{{ block content }}
+    You are being redirected.
+{{ endblock }}
+{{ block scripts }}
+    <script>
+        function getBrowserName(){
+            /* return the name of the browser */
+            const navigator = window.navigator;
+            if (navigator.userAgent.indexOf("Chrome") != -1) {
+                return "Chrome";
+            } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+                return "Firefox";
+            } else if (navigator.userAgent.indexOf("MSIE") != -1) {
+                return "IE";
+            } else if (navigator.userAgent.indexOf("Opera") != -1) {
+                return "Opera";
+            } else if (navigator.userAgent.indexOf("Safari") != -1) {
+                return "Safari";
+            } else {
+                return "unknown";
+            }
+        }
+        function getOperatingSystem(){
+            const navigator = window.navigator;
+            const operatingSystem = navigator.platform;
+            return operatingSystem;
+        }
+        const browserName = getBrowserName();
+        const operatingSystem = getOperatingSystem();
+        liveSend({
+            'action': 'set_browser_name',
+            'browser_name': browserName,
+        })
+        liveSend({
+            'action': 'set_operating_system',
+            'operating_system': operatingSystem,
+        })
+        const link = js_vars.trajectory_link
+        window.location.replace(link);
+    </script>
+{{ endblock }}

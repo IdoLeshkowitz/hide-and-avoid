@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.incorrect-msg {
+    color: red;
+    text-align: center;
+}
+
+.correct-msg {
+    color: green;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.custom-select {
+    /* Define desired styles for the select element */
+    /* For example: */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+    align-self: start;
+    min-width: 7rem;
+}
+
+h5 {
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.underline-input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 5rem;
+    margin :0 0.5rem;
+    transition: border-width 0.2s, transform 0.2s;
+}
+.underline-input.error{
+    border-bottom: 1px solid red;
+}
+.underline-input:focus {
+    outline: none;
+    border-width: 1.2px;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.07);
+}
+
+.error{
+    color : red;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-black{
+    color:black !important;
+}
+
+.text-white{
+    color:white; !important;
+}

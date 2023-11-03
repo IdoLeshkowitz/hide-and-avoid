@@ -1,0 +1,59 @@
+{{ block scripts }}
+{{ endblock}}
+
+{{ block title }}
+{{ endblock }}
+
+{{ block content }}
+<section>
+    <p>
+        Welcome to the “Hiding” game experiment! Before we start, please respond to the informed consent form.
+    </p>
+    <p>
+        <b>Informed consent form</b><br/>
+        Principal Investigator: Yaakov Kareev<br/>
+        We are asking you to participate in a research study. This form will give you some information about the study. Please read this form carefully.
+    </p>
+    <p>
+        <b>A. Project Description</b><br/>
+        The game involves a set of boxes and a number of objects to be hidden in the boxes. Each box has a value by which the number of objects in the box will be multiplied (the box’ <b>multiplication rate</b>). You will play either as a “Hider” or as an “Opener”. If you are a Hider you will distribute the objects endowed to you across the boxes; if you are an Opener you will choose half of the boxes to be opened later. The Opener earns the value of the objects in the unopened boxes, the Hider earns the value of the objects in the opened boxes.<br/>
+        Before the hiding and opening you will be asked to complete a brief test to make sure you understand the game. If you fail the test your participation will be terminated.<br/>
+        After playing, you will be asked to answer a question about the game.
+    </p>
+    <p>
+        This study is part of a research being conducted with the goal of publication in academic journals and presentation at academic conferences.
+    </p>
+    <p>
+        <b>B. Risks and Benefits</b><br/>
+        <ol>
+            <li>Your participation in this study does not involve any physical or emotional risk to you beyond the risks of daily life.</li>
+            <li>You have the right to discontinue participation at any time for any reason; but if you do, you will forfeit your payoff.</li>
+            <li>The potential benefit of the study is a better scientific understanding of people’s decision making.</li>
+        </ol>
+    </p>
+    <p>
+        <b>C. Confidentiality</b><br/>
+        We do not have access to your identity, nor do we have any need to know it. Hence, your privacy will be maintained in all published and written data resulting from this study. All data collected will be analyzed in an aggregate form.
+    </p>
+    <p>
+        <b>D. Contacts</b><br/>
+        If you have any questions or concerns about this study or rights as a participant in this research, you may contact idoleshkowitz@gmail.com
+    </p>
+    <p>
+        <b>E. Subject Rights</b><br/>
+        Participation in this study is voluntary.
+    </p>
+    <p>
+        Prior to the game you will be shown a simple test of 3 questions to ensure you understood the game. You will get two chances to answer each question correctly. However, if you answer any question twice incorrectly, your participation will be terminated.<br/>
+        Click "Proceed" when you are ready to start the test.
+    </p>
+   {{ formfields }}
+</section>
+<div class="btn-container">
+    <button class="btn btn-primary" type="submit">Proceed</button>
+</div>
+{{ endblock }}
+
+{{ block styles}}
+    <link rel="stylesheet" href="{{ static 'global/styles.css' }}">
+{{ endblock }}

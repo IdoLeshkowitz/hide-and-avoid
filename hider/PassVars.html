@@ -1,0 +1,12 @@
+{{ block content }}
+<body onload="skip_page()">
+{{ endblock }}
+
+{{ block scripts }}
+<script>
+    function skip_page() {
+        document.getElementById("form").submit();
+    }
+</script>
+{{ endblock }}
+
