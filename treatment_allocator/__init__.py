@@ -94,6 +94,8 @@ class Allocator(Page):
             url = f"{base_url}/room/{C.TRAJECTORIES_LINKS[player.trajectory]}"
         else:
             url = f"http://localhost:8000/room/{C.TRAJECTORIES_LINKS[player.trajectory]}"
+        print(f"URL: {url}")
+        print(f"Player: {player.participant.label}")
         return {"trajectory_link": url + "?participant_label=" + player.participant.label}
 
 
