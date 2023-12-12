@@ -94,9 +94,10 @@ class Allocator(Page):
             url = f"{base_url}/room/{C.TRAJECTORIES_LINKS[player.trajectory]}"
         else:
             url = f"http://localhost:8000/room/{C.TRAJECTORIES_LINKS[player.trajectory]}"
-        if not url :
-            url = "NO_PROLIFIC_ID"
-        return {"trajectory_link": url + "?participant_label=" + player.participant.label}
+        participant_label = player.participant.label
+        if not participant_label:
+            participant_label = "NO_PROLIFIC_ID"
+        return {"trajectory_link": url + "?participant_label=" + participant_label}
 
 
 page_sequence = [Allocator]
